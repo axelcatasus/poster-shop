@@ -10,6 +10,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss' scpoed>
+
+.header {
+  height: 608px;
+  width: 100%;
+  background: #3DE07E url('../assets/ninjahead.svg') center bottom no-repeat
+}
 
 </style>
