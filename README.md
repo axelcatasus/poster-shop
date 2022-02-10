@@ -1,4 +1,4 @@
-# poster-shop
+# poster-shop2
 
 ## Project setup
 ```
