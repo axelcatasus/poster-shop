@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-          
+    <router-link to="/MenuBar"><img class="burger" src="../assets/navicon.svg" alt="burger menu"></router-link>
   </div>
 </template>
 
@@ -17,5 +17,10 @@ export default {
   width: 100%;
   background: #3DE07E url('../assets/ninjahead.svg') center bottom no-repeat
 }
+
+.burger{
+    display: flex;
+    padding: 30px;
+  }
 
 </style>

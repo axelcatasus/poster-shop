@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import ProductView from '../views/ProductView.vue'
+import MenuBar from '../components/MenuBar.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/product/:id',
     name: 'ProductView',
     component: ProductView
+  },
+  {
+    path: '/MenuBar',
+    name: 'MenuBar',
+    component: MenuBar
   }
 ]
 

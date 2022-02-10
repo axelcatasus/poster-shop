@@ -19,7 +19,7 @@
           <h1>Social media</h1>
           <div class="icons">
             <img src="../assets/logo-twitter.svg" alt="logo">
-            <img src="../assets/logo-instagram.svg" alt="logo">
+            <img src="../assets/logo-facebook.svg" alt="logo">
             <img src="../assets/logo-linkedin.svg" alt="logo">
             <img src="../assets/logo-instagram.svg" alt="logo">
           </div>
