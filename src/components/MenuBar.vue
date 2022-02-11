@@ -2,7 +2,14 @@
 	<div class="modal">
     <div class="modal-content">
     <div class="icons">
-      <span class="link" to="/"><img class="close" src="../assets/close.png" alt="close icon" @click="$emit('close')"></span>
+      <span class="link">
+        <img 
+          class="close"
+          src="../assets/close.png"
+          alt="close icon"
+          @click="$emit('close')"
+        >
+      </span>
     </div>
 
       <div class="nav section">
@@ -45,6 +52,11 @@ export default {
 .close{
   width: 20px;
 }
+
+.close:hover {
+  cursor: pointer;
+}
+
 .icons{
   display: flex;
 }
