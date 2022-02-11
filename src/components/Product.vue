@@ -8,7 +8,8 @@
     <div>
       <h2>{{character.title}}</h2>
       <p>{{character.description}}</p>
-      <button>Oh, take my money!</button>
+      <p>{{ amount }}</p>
+      <button @click="$store.dispatch('storeAdd', character.id)">Oh, take my money!</button>
     </div>
   </div>
 </template>
@@ -16,6 +17,15 @@
 <script>
 export default {
   props:{character: Object, big: Boolean},
+  computed: {
+    amount(){
+      if(this.$store.state.cartProducts.find(product => product.id == this.character.id)){
+        return this.$store.state.cartProducts.find(product => product.id == this.character.id).amount
+      } else {
+        return '0'
+      }
+    }
+  },
   data(){ 
     return {
       productImage: this.character.image,
@@ -57,6 +67,11 @@ button {
   font-family: 'Fira Sans';
   color: white;
   padding: 10px;
+}
+
+button:hover {
+  filter: brightness(1.3);
+  cursor: pointer;
 }
 
 .large {

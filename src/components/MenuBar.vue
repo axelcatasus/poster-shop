@@ -16,6 +16,7 @@
       <h2>Products</h2>
       <h2>About Us</h2>
       <h2>Contact</h2>
+      <h2>Total Price: {{ priceTotal }}</h2>
     </div>
     </div>
   </div>
@@ -23,6 +24,11 @@
 
 <script>
 export default {
+  computed: {
+    priceTotal(){
+      return this.$store.getters.printPrice
+    }
+  }
 }
 </script>
 
